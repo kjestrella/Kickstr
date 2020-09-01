@@ -1,7 +1,7 @@
 {
   "name": "kickstr",
   "version": "1.0.0",
-  "description": "Sneaker site",
+  "description": "Kickstr, a website that delivers exclusive sneakers.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
