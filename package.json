@@ -4,8 +4,18 @@
   "description": "Kickstr, a website that delivers exclusive sneakers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "watch:css": "onchange 'src/scss' -- npm run scss",
+    "start": "run-p serve watch:css"
   },
   "author": "Kevin Estrella",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "node": "^14.8.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2"
+  }
 }
