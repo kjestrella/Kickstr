@@ -1,0 +1,41 @@
+.hero {
+  background: $white;
+  height: 75vh;
+  padding: 4.2rem 8rem;
+  margin-bottom: 6rem;
+  
+  &__content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+    
+  }
+
+  &__left {
+    background: $primaryColor;
+    color: $soft-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4rem;
+    
+
+    & p {
+      padding: 1.2rem 2rem;
+    }
+  }
+
+  &__right {
+    background-image: url(/src/images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .btn {
+    margin-top: 2.5rem;
+  }
+}

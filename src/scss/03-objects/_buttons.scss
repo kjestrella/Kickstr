@@ -1,0 +1,25 @@
+.btn {
+  padding: 1.2rem 1.2rem;
+  background: $tertiaryColor;
+  border: none;
+
+  a {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $soft-white;
+    cursor: pointer;
+  }
+
+}
+
+.nav__btn {
+  padding: 1.2rem 1.2rem;
+  background: $tertiaryColor;
+  border: none;
+
+  a {
+    font-size: 1.1rem;
+    
+  }
+}
