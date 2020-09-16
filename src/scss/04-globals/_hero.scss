@@ -1,8 +1,7 @@
 .hero {
   background: $white;
   height: 75vh;
-  padding: 4.2rem 8rem;
-  margin-bottom: 6rem;
+  width: 100%;
   
   &__content {
     display: grid;
@@ -12,6 +11,9 @@
     
   }
 
+
+
+
   &__left {
     background: $primaryColor;
     color: $soft-white;
@@ -20,11 +22,12 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 4rem;
+    
     
 
     & p {
       padding: 1.2rem 2rem;
+      max-width: 80%;
     }
   }
 
@@ -33,6 +36,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
   }
 
   .btn {

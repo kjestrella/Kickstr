@@ -1,0 +1,37 @@
+.feature {
+  height: 70rem;
+  background: $soft-white;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  &__card {
+    background: $primaryColor;
+    max-width: 35rem;
+    height: 40rem;
+    margin: 1rem;
+  
+    
+
+
+    & img {
+      width: 100%;
+    }
+
+    
+
+    
+  }
+
+
+
+
+}
+
+
+

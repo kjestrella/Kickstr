@@ -28,14 +28,16 @@ a {
 }
 
 hr {
-  max-width: 90%;
-  margin: 0 auto;
-  color: $lightGrey;
+  width: 2rem;
+  margin: 1rem auto;
+  border: 1px solid $secondaryColor;
 }
 
-section {
-  padding: 4.2rem 8rem;
+button {
+  display: inline-block;
 }
+
+
 
 
 

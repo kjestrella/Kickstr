@@ -1,4 +1,43 @@
 .about {
-  height: 70vh;
-  background-color: $tertiaryColor;
+  height: 80rem;
+  
+
+
+
+  &__content__top {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      padding: 1.2rem 2rem;
+      max-width: 65%;
+    }
+
+  }
+
+  &__content__bottom {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $soft-white;
+    // background-image: url(/src/images/about.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background: linear-gradient(to left, $secondaryColor, rgba(0, 0, 0, 0.5)), url(/src/images/about.jpg) center center/cover no-repeat;
+  
+
+    
+  }
+
+  .btn {
+    margin-top: 2.5rem;
+  }
 }
