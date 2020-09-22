@@ -2,12 +2,29 @@
   background: $white;
   height: 75vh;
   width: 100%;
+
+
+ 
   
   &__content {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(440px, 1fr) 1fr;
+    grid-template-rows: 35rem 40rem;
     height: 100%;
+   
+
+    @include respond(tab-port) {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url(/src/images/hero.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     grid-gap: 0;
+      
+    }
     
   }
 
@@ -22,12 +39,17 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+       
+     }
     
     
 
     & p {
       padding: 1.2rem 2rem;
-      max-width: 80%;
+      max-width: 70%;
     }
   }
 
@@ -36,6 +58,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    
     
   }
 

@@ -1,0 +1,60 @@
+.footer {
+  height: 40rem;
+  background: #fff;
+  padding: 6.3rem 8rem;
+  font-size: 1.4rem;
+
+
+
+  
+  &__logo-box {
+  }
+
+  .logo  {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__navigation {
+    padding-top: 2rem;
+    
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__items {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: #333;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: inherit;
+      display: inline-block;
+      margin-top: 2rem;
+      
+    }
+
+    &:hover,
+    &:active {
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
+
+
+  .footer__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
