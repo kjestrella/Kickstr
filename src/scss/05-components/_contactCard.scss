@@ -1,6 +1,6 @@
 
 .contact__card {
-  background: linear-gradient(to left, $secondaryColor, rgba(0, 0, 0, 0.5)), url(/src/images/contact.jpg) center center/cover no-repeat;
+  background: linear-gradient(to left, $secondaryColor, rgba(0, 0, 0, 0.4)), url(/src/images/contact.jpg) center center/cover no-repeat;
   width: 100%;
   height: 100%;
   
@@ -17,7 +17,7 @@
   margin: 9rem 0;
   min-width: 40%;
   min-height: 55%;
-  background: rgba($black, 0.6);
+  background: $primaryColor;
   box-shadow: 0 1rem 2rem rgba($black, .1);
   border-radius: 3px;
 
@@ -42,9 +42,9 @@
     font-size: 1.5rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
-    color: $secondaryColor;
+    color: #333;
     border-radius: 2px;
-    background-color: rgb(243, 243, 243);
+    background-color: $white;
     border: none;
     border-bottom: 3px solid transparent;
     width: 100%;
@@ -54,7 +54,7 @@
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($black, .1);
-      border-bottom: 3px solid $primaryColor;
+      border-bottom: 3px solid green;
     }
 
     &:focus:invalid {
@@ -62,7 +62,7 @@
     }
 
     &::-webkit-input-placeholder {
-      color: rgba(131, 131, 131, 0.952);
+      color: rgba(128, 126, 126, 0.952);
     }
   }
 
@@ -77,11 +77,13 @@
     margin-top: .7rem;
     display: block;
     transition: all .3s;
+    color: $lightGrey;
   }
 
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
+   
   }
 }

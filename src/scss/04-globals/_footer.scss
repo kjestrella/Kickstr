@@ -1,14 +1,57 @@
 .footer {
   height: 40rem;
   background: #fff;
-  padding: 6.3rem 8rem;
+  padding: 7.3rem 8rem;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
 
+  }
+
+  .footer__content {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      margin-top: 4.2rem;
+      margin-left: 3rem;
+      margin-bottom: 3rem;
+  
+    }
+  }
+
+
+  &__social {
+    display: flex;
+    color: $primaryColor;
+    width: 10%;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    transition: all .2s ease;
+
+    li a {
+      color: $primaryColor;
+      margin: 0 .5rem;
+
+      :hover {
+        color: $tertiaryColor;
+      }
+    }
+
+  }
+
+ 
 
   
-  &__logo-box {
-  }
 
   .logo  {
     font-size: 3rem;

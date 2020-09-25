@@ -1,7 +1,7 @@
 .feature {
   padding: 4rem 2rem;
   margin: 0 auto;
-  background: $soft-white;
+  background: $white;
 
   h2 {
     text-align: center;
@@ -37,7 +37,7 @@
     .price {
       color: red;
       font-size: 1.3rem;
-      margin-left: 13rem;
+      margin-left: 12rem;
       position: absolute;
       top: 1;
       left: 180px;
@@ -51,8 +51,8 @@
 
   &__card {
     background: #fff;
-    max-width: 35rem;
-    height: 45.6rem;
+    max-width: 33rem;
+    height: 45rem;
     margin: 1rem;
     position: relative;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.18);

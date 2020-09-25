@@ -14,13 +14,13 @@ html {
   font-family: "Fira Sans", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
 
 
- 
+
   @include respond(tab-land) {
     font-size: 56.25%;
   }
@@ -35,6 +35,12 @@ html {
   }
 }
 
+body {
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
 ul,
 li {
   list-style: none;
@@ -45,8 +51,8 @@ a {
 }
 
 hr {
-  width: 2rem;
-  margin: 4rem auto;
+  width: 4rem;
+  margin: 1rem auto;
   border: 1px solid $secondaryColor;
 }
 
@@ -54,16 +60,7 @@ button {
   display: inline-block;
 }
 
-body {
- 
 
-  @include respond(tab-port) {
-    padding: 0;
-  }
+section {
+  padding: 2.5rem 0;
 }
-
-
-
-
-
-
