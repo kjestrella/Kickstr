@@ -1,103 +1,188 @@
 .footer {
-  height: 40rem;
-  background: #fff;
-  padding: 7.3rem 8rem;
-  font-size: 1.4rem;
-
-  @include respond(tab-port) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    
-
-  }
-
-  .footer__content {
-    @include respond(tab-port) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin-top: 4.2rem;
-      margin-left: 3rem;
-      margin-bottom: 3rem;
   
-    }
+  background: $white;
+  width: auto;
+  background: $white;
+  padding: 6.3rem 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.9;
+
+
+
+
+
+  h3 {
+    margin: 1rem 0;
+    font-size: 1.4rem;
   }
 
+
+
+
+
+&__contact,
+&__information,
+&__account   {
+  
+  color: $darkGrey;
+  
+}
+
+
+  &__contact {
+   
+  }
 
   &__social {
-    display: flex;
-    color: $primaryColor;
-    width: 10%;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    transition: all .2s ease;
+   padding: .2rem 0;
+    
+   
+    
+    
+  }
 
-    li a {
-      color: $primaryColor;
-      margin: 0 .5rem;
+  &__link {
+  margin-right: .4rem;
+  background: $primaryColor;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.2rem;
+  box-shadow: $boxShadow;
+  position: relative;
 
-      :hover {
-        color: $tertiaryColor;
-      }
-    }
+  a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: $tertiaryColor;
+  }
 
   }
 
+
+  &__information {
+    
+   
+  }
+
+  &__account {
+    
+    
+  }
+
+  
+
+  // @include respond(tab-port) {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   width: 100%;
+    
+
+  // }
+
+  // .footer__content {
+  //   @include respond(tab-port) {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     text-align: center;
+  //     width: 100%;
+      
+  //   }
+
+
+    
+  // }
+
+
+  // &__social {
+  //   display: flex;
+  //   color: $primaryColor;
+  //   width: 16%;
+  //   justify-content: space-between;
+  //   font-size: 1.2rem;
+    
+    
+
+
+  //   .social__link {
+  //     margin: 0 .9rem 0 0;
+  //     color: $primaryColor;
+  //     cursor: pointer;
+      
+
+  //     :hover {
+  //       color: $tertiaryColor;
+  //       font-size: 1.4rem;
+        
+        
+  //     }
+  //   }
+
+  // }
+
+  
  
 
   
 
-  .logo  {
-    font-size: 3rem;
-    font-weight: 700;
-  }
+  // .logo  {
+  //   font-size: 3rem;
+  //   font-weight: 700;
+  // }
 
-  &__navigation {
-    padding-top: 2rem;
+  // &__navigation {
+  //   padding-top: 2rem;
     
-  }
+  // }
 
-  &__list {
-    list-style: none;
-  }
+  // &__list {
+  //   list-style: none;
+  // }
 
-  &__items {
-    display: inline-block;
+  // &__items {
+  //   display: inline-block;
 
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-  }
+  //   &:not(:last-child) {
+  //     margin-right: 1.5rem;
+  //   }
+  // }
 
-  &__link {
-    &:link,
-    &:visited {
-      color: #333;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: inherit;
-      display: inline-block;
-      margin-top: 2rem;
+  // &__link {
+  //   &:link,
+  //   &:visited {
+  //     color: $darkGrey;
+  //     text-decoration: none;
+  //     font-family: inherit;
+  //     display: inline-block;
+  //     margin-top: 1rem;
       
-    }
+  //   }
 
-    &:hover,
-    &:active {
-      color: $primaryColor;
-      font-weight: 700;
-    }
-  }
+  //   &:hover,
+  //   &:active {
+  //     color: $primaryColor;
+  //     font-weight: 700;
+  //   }
+  // }
 
 
-  .footer__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  // .footer__box {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
     
-  }
+  // }
+
+  
 }

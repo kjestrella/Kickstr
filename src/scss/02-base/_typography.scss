@@ -18,10 +18,17 @@
 }
 
 .tertiary-heading {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   font-weight: 400;
 }
 
 p {
   font-size: 1.4rem;
+}
+
+.brand-logo {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: $primaryColor;
+  cursor: pointer;
 }
