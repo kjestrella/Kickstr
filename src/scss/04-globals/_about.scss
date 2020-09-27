@@ -13,7 +13,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 50%;
+    height: 55%;
     margin-bottom: 4rem;
    
     
@@ -21,13 +21,13 @@
 
     p {
       margin: 1rem 0;
-      max-width: 65%;
+      max-width: 50%;
     }
 
   }
 
   &__content__bottom {
-    height: 40%;
+    height: 45%;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -41,8 +41,10 @@
     // background-repeat: no-repeat;
     background: linear-gradient(to left, $secondaryColor, rgba(0, 0, 0, 0.5)), url(/src/images/about.jpg) center center/cover no-repeat;
 
-
-
+     p {
+       margin: .5rem 0;
+       max-width: 50%;
+     }
   }
 
   .btn {

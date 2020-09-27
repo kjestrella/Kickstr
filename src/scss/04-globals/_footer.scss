@@ -1,9 +1,9 @@
 .footer {
-  
+
   background: $white;
   width: auto;
   background: $white;
-  padding: 6.3rem 9rem;
+  padding: 7rem 14rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,74 +11,163 @@
   line-height: 1.9;
 
 
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+   
+
+  }
+
+
 
 
 
   h3 {
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-size: 1.4rem;
+
+    @include respond(tab-port) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      font-size: 1.6rem;
+    }
+
   }
 
 
 
 
 
-&__contact,
-&__information,
-&__account   {
-  
-  color: $darkGrey;
-  
-}
+
+
 
 
   &__contact {
-   
+    
+
+    @include respond(tab-port) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      width: 100%;
+      margin-bottom: 2rem;
+      text-align: center;
+      
+    }
   }
 
-  &__social {
-   padding: .2rem 0;
-    
-   
-    
-    
-  }
+
 
   &__link {
-  margin-right: .4rem;
-  background: $primaryColor;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 1.2rem;
-  box-shadow: $boxShadow;
-  position: relative;
+    margin-right: .4rem;
+    background: $tertiaryColor;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 
-  a {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    color: $tertiaryColor;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.2rem;
+
+    position: relative;
+    transition: all .2s ease;
+
+    &:hover {
+      background: $tertiaryColor;
+      box-shadow: $boxShadow;
+    }
+
+
+
+
+    a {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      color: $white;
+      transition: all .2s ease;
+
+      &:hover {
+        color: $white;
+
+      }
+    }
+
   }
 
-  }
+  &__details,
+  &__details a,
+  &__information,
+  &__information a,
+  &__account,
+  &__account a {
+    font-weight: 400;
+    color: $darkGrey;
+    font-size: 1.1rem;
 
+
+    @include respond(tab-port) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      font-size: 1.2rem;
+    }
+
+     & a:hover {
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
 
   &__information {
-    
-   
+
+    @include respond(tab-port) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
   }
 
   &__account {
-    
-    
+
+    @include respond(tab-port) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+     
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
   }
 
-  
+
+  &__information a {
+    color: $darkGrey;
+
+  }
+
+  &__account a {
+    color: $darkGrey;
+
+  }
+
+
 
   // @include respond(tab-port) {
   //   display: flex;
@@ -86,7 +175,7 @@
   //   align-items: center;
   //   flex-direction: column;
   //   width: 100%;
-    
+
 
   // }
 
@@ -98,11 +187,11 @@
   //     flex-direction: column;
   //     text-align: center;
   //     width: 100%;
-      
+
   //   }
 
 
-    
+
   // }
 
 
@@ -112,30 +201,30 @@
   //   width: 16%;
   //   justify-content: space-between;
   //   font-size: 1.2rem;
-    
-    
+
+
 
 
   //   .social__link {
   //     margin: 0 .9rem 0 0;
   //     color: $primaryColor;
   //     cursor: pointer;
-      
+
 
   //     :hover {
   //       color: $tertiaryColor;
   //       font-size: 1.4rem;
-        
-        
+
+
   //     }
   //   }
 
   // }
 
-  
- 
 
-  
+
+
+
 
   // .logo  {
   //   font-size: 3rem;
@@ -144,7 +233,7 @@
 
   // &__navigation {
   //   padding-top: 2rem;
-    
+
   // }
 
   // &__list {
@@ -167,7 +256,7 @@
   //     font-family: inherit;
   //     display: inline-block;
   //     margin-top: 1rem;
-      
+
   //   }
 
   //   &:hover,
@@ -181,8 +270,8 @@
   // .footer__box {
   //   display: grid;
   //   grid-template-columns: repeat(2, 1fr);
-    
+
   // }
 
-  
+
 }
