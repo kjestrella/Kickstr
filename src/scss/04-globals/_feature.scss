@@ -3,6 +3,19 @@
   margin: 0 auto;
   background: $white;
 
+
+
+
+  hr {
+    width: 4%;
+    margin: 1rem auto;
+  }
+
+
+
+
+ 
+
   h2 {
     text-align: center;
   }
@@ -18,9 +31,12 @@
 
   &__inner {
     padding-top: 2rem;
+    position: relative;
+    width: 100%;
 
 
 
+ 
 
 
     h3 {
@@ -35,7 +51,7 @@
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin: 1.6rem 0;
       max-width: 90%;
     }
@@ -46,7 +62,7 @@
       margin-left: 12rem;
       position: absolute;
       top: 1;
-      left: 180px;
+      left: 38%;
 
 
 
@@ -73,10 +89,17 @@
   &__card {
     background: #fff;
     max-width: 33rem;
-    height: 46rem;
+    height: 46.5%;
     margin: 1rem;
     position: relative;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    transition: all .2s ease;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+
+    
 
 
 

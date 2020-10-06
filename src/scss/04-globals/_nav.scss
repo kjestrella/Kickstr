@@ -27,7 +27,6 @@
     @include respond(tab-port) {
       padding-top: 2rem;
       margin: 0 2rem;
-
     }
 
 
@@ -37,24 +36,13 @@
       font-weight: 400;
       cursor: pointer;
 
-
-
-      &:hover {
-        color: $primaryColor;
-        font-weight: 700;
-      }
-
     }
 
-    & li:nth-of-type(4) {
-      background: $tertiaryColor;
-      padding: 1rem;
-      box-shadow: $boxShadow;
-      width: 7rem;
-
-
+    button > a {
+       
+       color: $primaryColor;
+       font-weight: 700;
     }
-
 
     & :not(:last-child) {
       

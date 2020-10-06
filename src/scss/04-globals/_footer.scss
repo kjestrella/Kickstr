@@ -82,6 +82,7 @@
 
     &:hover {
       background: $tertiaryColor;
+      transform: translateY(-.2rem);
       box-shadow: $boxShadow;
     }
 
@@ -98,7 +99,8 @@
 
       &:hover {
         color: $white;
-
+        
+      
       }
     }
 

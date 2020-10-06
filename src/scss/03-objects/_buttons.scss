@@ -4,21 +4,31 @@
   padding: 1.2rem 2.2rem;
   background: $tertiaryColor;
   border: none;
-  box-shadow: $boxShadow;
+  transition: all .2s ease;
+  cursor: pointer;
+
+
+ 
+    &:hover {
+      
+      color: $white;
+
+       
+        transform: translateY(-.2rem);
+        box-shadow: $boxShadow;
+      
+    }
+
  
 
   a {
-    text-transform: uppercase;
+    
     font-size: 1.1rem;
     font-weight: 700;
     color: $darkGrey;
-    cursor: pointer;
+    
 
-    &:hover {
-      
-        color: $white;
-        font-weight: 700;
-      }
+  
     
   }
 
