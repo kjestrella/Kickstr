@@ -12,6 +12,9 @@
    align-items: center;
    flex-direction: column;
    position: relative;
+  
+
+  
    
  }
 
@@ -27,7 +30,7 @@
 
 
   &__img {
-    max-width: 34vw;
+    width: 32vw;
     height: 46rem;
     background-image: url(/src/images/story.jpg);
     background-size: cover;
@@ -37,9 +40,14 @@
     position: absolute;
     z-index: 1;
     left: 0;
-    top: 8rem;
+    top: 6rem;
     right: 0;
     bottom: 0;
+
+    @include respond(tab-port) {
+      width: 45%;
+     
+    }
 
    
     
@@ -49,15 +57,15 @@
 
 
   &__content {
-    width: 75vw;
-    height: 42rem;
+    width: 80vw;
     position: relative;
-    top: 6rem;
-    left: 4rem;
-    box-shadow: $boxShadow;
-    background: $soft-white;
     text-align: left;
-    display: flex;
+   
+  
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
     
     
 
@@ -68,9 +76,31 @@
   }
 
   &__inner {
-    padding: 6rem 3rem;
-    margin-left: 44%;
+    padding: 0 4.6rem;
+    margin-left: 40%;
     color: $primaryColor;
+
+
+    p:nth-of-type(2) {
+      
+      
+    }
+
+    p {
+      width: 60%;
+    }
+
+
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+
+     
+    }
 
 
     hr {
