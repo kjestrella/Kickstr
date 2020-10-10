@@ -3,20 +3,16 @@
   justify-content: center;
   height: 65rem;
 
-  
-  
- 
- &__container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   position: relative;
-  
 
-  
-   
- }
+
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
 
 
 
@@ -25,106 +21,98 @@
   span {
     text-transform: uppercase;
     font-size: 1rem;
-    
+
   }
 
 
-  &__img {
-    width: 32vw;
-    height: 46rem;
-    background-image: url(/src/images/story.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: $boxShadow;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 6rem;
-    right: 0;
-    bottom: 0;
-
-    @include respond(tab-port) {
-      width: 45%;
-     
-    }
-
-   
-    
-    
-  }
 
 
 
   &__content {
-    width: 80vw;
-    position: relative;
-    text-align: left;
-   
-  
+    width: 100%;
+    height: 100%;
+    background: url(/src/images/story.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    @include respond(tab-port) {
-      width: 100%;
-    }
-    
-    
+
+
+   
+
+
+
+
+
 
     p {
-      padding-top: 1rem;
+      margin-top: 1rem;
       width: 75%;
     }
   }
 
+
+
   &__inner {
-    padding: 0 4.6rem;
-    margin-left: 40%;
-    color: $primaryColor;
+    color: $soft-white;
+    backdrop-filter: blur(18px);
+    padding: 2rem;
+    width: 40%;
+    margin-top: 10%;
+    box-shadow: $boxShadow;
+    
+    
+  
+
+    
 
 
-    p:nth-of-type(2) {
-      
-      
-    }
+
 
     p {
-      width: 60%;
+      width: 100%;
+
     }
 
 
     @include respond(tab-port) {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      width: 100%;
+      margin: 30vh auto;
 
 
-     
+      p {
+        width: 100%;
+      }
+
+
+
     }
+
+
 
 
     hr {
       width: 10%;
     }
-    
-    
+
+
     button {
       background-color: $primaryColor;
       margin-top: 2rem;
-     
+
 
       a {
         color: $white;
       }
     }
-    
-    
-    
+
+
+
 
   }
-  
-  
 
-  
-   
-  }
+
+
+
+
+}

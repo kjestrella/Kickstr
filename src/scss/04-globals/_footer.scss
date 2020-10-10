@@ -106,6 +106,11 @@
 
   }
 
+  &__details p {
+    font-size: 1.1rem;
+  }
+
+
   &__details,
   &__details a,
   &__information,
@@ -126,6 +131,8 @@
       font-size: 1.2rem;
     }
   }
+
+  
 
   &__information {
 
@@ -165,9 +172,9 @@
       position: absolute;
       bottom: 0%;
       left: 0px;
-      top: 17px;
+      top: 14px;
       width: 100%;
-      height: 4px;
+      height: 3px;
       background: $tertiaryColor;
       display: block;
       -webkit-transform-origin: right top;
@@ -189,8 +196,7 @@
       transform: scale(1, 1)
     }
     
-    
-
+  
   }
 
   &__account li a {
@@ -201,9 +207,9 @@
       position: absolute;
       bottom: 0%;
       left: 0px;
-      top: 17px;
+      top: 14px;
       width: 100%;
-      height: 4px;
+      height: 3px;
       background: $tertiaryColor;
       display: block;
       -webkit-transform-origin: right top;
