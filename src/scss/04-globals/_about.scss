@@ -36,15 +36,6 @@
     background-position: center;
     background-repeat: no-repeat;
 
-
-
-   
-
-
-
-
-
-
     p {
       margin-top: 1rem;
       width: 75%;
@@ -61,13 +52,6 @@
     margin-top: 10%;
     box-shadow: $boxShadow;
     
-    
-  
-
-    
-
-
-
 
     p {
       width: 100%;
@@ -76,16 +60,12 @@
 
 
     @include respond(tab-port) {
-      width: 100%;
+      width: 90%;
       margin: 30vh auto;
-
 
       p {
         width: 100%;
       }
-
-
-
     }
 
 

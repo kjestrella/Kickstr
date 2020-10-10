@@ -21,7 +21,6 @@
 900 - 1200px:   Tablet landscape
 [1200 - 1800px] is where normal styles apply
 1800px:   Big Desktop
-
 */
 
 @mixin respond-phone {
@@ -37,7 +36,6 @@ $breakpoint arguement choices:
 -big-desktop
 
 ORDER: Base + typography > general layout + grid > page layout > components
-
 1em = 16px
 */
 @mixin respond($breakpoint) {

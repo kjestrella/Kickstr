@@ -19,12 +19,6 @@
 
 
 
-  
-
-
-
-
-
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +28,6 @@
       padding-top: 2rem;
       margin: 0 2rem;
     }
-
 
     & a {
       font-size: 1.4rem;
@@ -71,24 +64,14 @@
         -ms-transform: scale(1, 1);
         transform: scale(1, 1)
       }
-
     }
 
     button > a {
-       
        font-weight: 700;
     }
 
     & :not(:last-child) {
-      
       padding: 1.2rem 2.2rem;
- 
     }
-
-
-
   }
-
- 
-
 }
