@@ -13,7 +13,7 @@
 
 .form {
   padding: 2.5rem;
-  margin: 9rem 0;
+  margin: 10rem 0;
   min-width: 40%;
   min-height: 55%;
   background: $primaryColor-dark;
@@ -22,6 +22,12 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(9px);
   height: inherit;
+
+
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
 
 
 

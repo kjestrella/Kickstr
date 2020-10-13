@@ -39,7 +39,7 @@
 
     p {
       margin-top: 1rem;
-      width: 75%;
+      width: 80%;
     }
   }
 
@@ -54,15 +54,12 @@
     box-shadow: $boxShadow;
     
 
-    p {
-      width: 100%;
-
-    }
+   
 
 
     @include respond(tab-port) {
       width: 90%;
-      margin: 30vh auto;
+      margin: 32% auto;
 
       p {
         width: 100%;

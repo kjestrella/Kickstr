@@ -1,9 +1,9 @@
 .footer {
-
+  margin-top: 4rem;
   background: $white;
   width: auto;
   background: $white;
-  padding: 7rem 14rem;
+  padding: 8rem 14rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,9 +16,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 9% auto;
     width: 100%;
     padding: 0;
+
    
 
   }
@@ -32,10 +33,6 @@
     font-size: 1.4rem;
 
     @include respond(tab-port) {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // flex-direction: column;
       font-size: 1.6rem;
     }
 
@@ -50,13 +47,8 @@
 
 
   &__contact {
-    
 
     @include respond(tab-port) {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // flex-direction: column;
       width: 100%;
       margin-bottom: 2rem;
       text-align: center;
@@ -72,11 +64,9 @@
     width: 30px;
     height: 30px;
     text-align: center;
-
     border-radius: 50%;
     display: inline-block;
-    font-size: 1.2rem;
-
+    font-size: 1.3rem;
     position: relative;
     transition: all .2s ease;
 
@@ -96,7 +86,6 @@
       left: 50%;
       color: $white;
       transition: all .2s ease;
-
       &:hover {
         color: $white;
         
@@ -107,7 +96,7 @@
   }
 
   &__details p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 
@@ -119,7 +108,7 @@
   &__account a {
     font-weight: 400;
     color: $darkGrey;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     
 
 
@@ -232,112 +221,4 @@
     }
 
   }
-
-
-
-  // @include respond(tab-port) {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: column;
-  //   width: 100%;
-
-
-  // }
-
-  // .footer__content {
-  //   @include respond(tab-port) {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //     text-align: center;
-  //     width: 100%;
-
-  //   }
-
-
-
-  // }
-
-
-  // &__social {
-  //   display: flex;
-  //   color: $primaryColor;
-  //   width: 16%;
-  //   justify-content: space-between;
-  //   font-size: 1.2rem;
-
-
-
-
-  //   .social__link {
-  //     margin: 0 .9rem 0 0;
-  //     color: $primaryColor;
-  //     cursor: pointer;
-
-
-  //     :hover {
-  //       color: $tertiaryColor;
-  //       font-size: 1.4rem;
-
-
-  //     }
-  //   }
-
-  // }
-
-
-
-
-
-
-  // .logo  {
-  //   font-size: 3rem;
-  //   font-weight: 700;
-  // }
-
-  // &__navigation {
-  //   padding-top: 2rem;
-
-  // }
-
-  // &__list {
-  //   list-style: none;
-  // }
-
-  // &__items {
-  //   display: inline-block;
-
-  //   &:not(:last-child) {
-  //     margin-right: 1.5rem;
-  //   }
-  // }
-
-  // &__link {
-  //   &:link,
-  //   &:visited {
-  //     color: $darkGrey;
-  //     text-decoration: none;
-  //     font-family: inherit;
-  //     display: inline-block;
-  //     margin-top: 1rem;
-
-  //   }
-
-  //   &:hover,
-  //   &:active {
-  //     color: $primaryColor;
-  //     font-weight: 700;
-  //   }
-  // }
-
-
-  // .footer__box {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-
-  // }
-
-
 }

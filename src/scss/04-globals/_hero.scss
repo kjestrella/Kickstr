@@ -24,6 +24,7 @@
      background-image: url(/src/images/hero.jpg);
      background-position: center;
      background-repeat: no-repeat;
+     background-attachment: fixed;
      background-size: cover;
      grid-gap: 0;
       
@@ -61,13 +62,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
     
     
   }
 
   .btn {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     box-shadow: $boxShadow;
   }
 }
