@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project was created to practice HTML, CSS, and SASS. I wanted to utilize the knowledge I gained by online tutorials. From it I learned responsive design, SASS, BEM, and npm. 
+This project was created to practice HTML, CSS, and SASS. I wanted to utilize the knowledge I gained from online tutorials. From it I learned responsive design, SASS, BEM, and npm. 
 	
 ## Technologies
 Project is created with:
